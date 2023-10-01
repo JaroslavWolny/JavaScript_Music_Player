@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #212121),
+    url(media/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music {
+  width: 85%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.music img {
+  width: 300px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.info {
+  color: #fff;
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4d22b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a0a53;
+}
+
+#currentTime {
+  color: white;
+  font-size: 18px;
+}
+
+.waveform-container {
+  flex: 1;
+  overflow-x: scroll;
+  max-height: 200px;
+}
